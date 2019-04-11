@@ -1,0 +1,25 @@
+<div class="parent">
+    <form [formGroup]="form">
+        <p>
+            <input type="text" formControlName="name" placeholder="Name" class="name1" #name>
+        </p>
+
+        <p>
+            <input type="number" formControlName="number" placeholder="Number" class="number" #number>
+        </p>
+
+        <p>
+            <input type="text" formControlName="address" placeholder="Address" class="address" #address>
+        </p>
+
+        <p>
+            <input type="text" formControlName="email" placeholder="email" class="email" #email>
+        </p>
+
+        <div class="submit">
+            <button mat-raised-button (click)="submitToSave()" color="primary">Submit</button>
+        </div>
+    </form>
+
+</div>
+
